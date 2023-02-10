@@ -1,0 +1,53 @@
+body {
+    background-color: #1E1E1E;
+  }
+  
+  nav {
+    background-color: #2B2B2B;
+  }
+  header {
+    background-color: #2B2B2B;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  h1, h2, h3, h4, h5, h6, p {
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  main {
+    background-color: #2B2B2B;
+    border-radius: 10px;
+  }
+  
+  aside {
+    background-color: #2B2B2B;
+    border-radius: 10px;
+  }
+  
+  aside h3 {
+    content: "Latest Tweets";
+  }
+  
+  footer {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+  }
+  
+  footer p {
+    content: "Copyright [STUDENT NAME]";
+    background-color: #2B2B2B;
+  }
