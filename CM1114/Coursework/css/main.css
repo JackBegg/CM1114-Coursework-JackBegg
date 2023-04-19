@@ -1,0 +1,229 @@
+body {
+  background-color: black; /* Set the background color of the entire page to black */
+}
+  
+nav {
+  background-color: #2B2B2B; /* Set the background color of the navigation bar to dark grey */
+  padding:10px; /* Add 10px padding around the navigation bar */
+}
+
+main, nav {
+  margin:10px; /* Add 10px margin around the main content area and navigation bar */
+}
+
+main{
+  padding-top:10px; /* Add 10px padding to the top of the main content area */
+}
+
+.center{
+  display:block; /* Display the element as a block element */
+  margin-left:auto; /* Set the left margin to auto to center the element horizontally */
+  margin-right:auto; /* Set the right margin to auto to center the element horizontally */
+  width:50%; /* Set the width of the element to 50% of its container */
+}
+
+header {
+  background-color: #2B2B2B; /* Set the background color of the header to dark grey */
+  border-top-left-radius: 10px; /* Add 10px border radius to the top left corner of the header */
+  border-top-right-radius: 10px; /* Add 10px border radius to the top right corner of the header */
+  padding:10px; /* Add 10px padding around the header */
+  margin:10px; /* Add 10px margin around the header */
+}
+
+#logo {
+  display: block; /* Display the logo as a block element */
+  width:50px; /* Set the width of the logo to 50px */
+  height:50px; /* Set the height of the logo to 50px */
+  float:left; /* Float the logo to the left side of its container */
+  margin-right:10px; /* Add 10px margin to the right of the logo */
+  border-radius: 50%; /* Set the border-radius to 50% to make the image a circle */
+  object-fit: cover; /* Set the object-fit property to cover to prevent image distortion */
+  overflow: hidden; /* Hide any image overflow outside the rounded circle */
+}
+
+nav ul {
+  margin:0; /* Remove any margin from the unordered list in the navigation bar */
+  padding:0; /* Remove any padding from the unordered list in the navigation bar */
+  overflow:hidden; /* Hide any overflow of the unordered list in the navigation bar */
+}
+
+nav li {
+  border:2px solid; /* Add a 2px border to the list items in the navigation bar */
+  background-color:#2B2B2B; /* Set the background color of the list items in the navigation bar to dark grey */
+  background-color: black; /* Set the background color of the list items in the navigation bar to black */
+  list-style-type: none; /* Remove any list item markers from the list items in the navigation bar */
+  float:left; /* Float the list items in the navigation bar to the left side of their container */
+  width:8%; /* Set the width of the list items in the navigation bar to 8% of their container */
+  padding:16px; /* Add 16px padding around the list items in the navigation bar */
+}
+
+nav li a {
+  color:white; /* Set the color of the links in the navigation bar to white */
+  text-decoration: none; /* Remove any text decoration from the links in the navigation bar */
+}
+
+nav li:hover{
+  background-color: #2B2B2B; /* Change the background color of the list items in the navigation bar to dark grey when hovered */
+}
+
+label,legend{
+  color:white; /* Set the color of the label and legend elements to white */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: Arial, sans-serif; /* Set the font family for all heading and paragraph elements to Arial, with a fallback to a sans-serif font */
+  color: #FFFFFF; /* Set the text color for all heading and paragraph elements to white */
+}
+
+h1 {
+  font-size: 36px; /* Set the font size of h1 elements to 36px */
+  display:inline; /* Display h1 elements as inline elements */
+}
+
+h3 {
+  font-size: 24px; /* Set the font size of h3 elements to 24px */
+}
+
+p {
+  font-size: 16px; /* Set the font size of paragraph elements to 16px */
+}
+
+main {
+  background-color: #2B2B2B; /* Set the background color of the main content area to dark grey */
+  border-radius: 10px; /* Add 10px border radius to all corners of the main content area */
+  padding:10px; /* Add 10px padding around the main content area */
+  display: flex; /* Set the main content area to display as a flexible container */
+  flex-wrap: wrap; /* Allow the flex items inside the main content area to wrap on multiple lines if necessary */
+  justify-content: center; /* Center the flex items horizontally inside the main content area */
+  align-items: flex-start; /* Align the flex items vertically at the top inside the main content area */
+}
+
+main > div {
+  flex: 0 0 100%; /* Set the flex-grow, flex-shrink, and flex-basis values for the div elements inside the main content area */
+  max-width: 100%; /* Set the maximum width of the div elements inside the main content area to 100% */
+  padding: 10px; /* Add 10px padding around the div elements inside the main content area */
+  box-sizing: border-box; /* Set the box-sizing property to border-box so that padding and borders are included in the total width and height of the div elements inside the main content area */
+}
+
+footer {
+  background-color: #1E1E1E; /* Set the background color of the footer to a slightly darker grey */
+  margin:10px; /* Add 10px margin around the footer */
+  padding:10px; /* Add 10px padding around the footer */
+  text-align: center; /* Center the text inside the footer */
+}
+
+table {
+  background-color: grey; /* Set the background color of the table to grey */
+  border-collapse: collapse; /* Collapse the borders of the table cells into a single border */
+  width:70%; /* Sets the width of the table to 70% of available width */
+}
+
+table td, table th {
+  border: 2px solid #f0f0f0; /* Set the border of the table cells and table headers to a 2px solid light grey color */
+  padding: 30px; /* Add 30px padding around the table cells and table headers */
+}
+
+Table tr:hover{
+  background-color:#FFFFFF; /* Change the background color of the table row to white when hovered */
+}
+
+Table th{
+  background-color: grey; /* Set the background color of the table headers to grey */
+  color: white; /* Set the text color of the table headers to white */
+}
+
+th {
+  text-align: center;/* Center the text horizontally */
+  vertical-align: middle;/* Center the text vertically */
+  font-size: 10pt;/* Set the font size to 10pt */
+  padding: 10px;/* Add padding to all sides of the cell */
+}
+
+td {
+  text-align: center;/* Center the text horizontally */
+  vertical-align: middle;/* Center the text vertically */
+  font-size: 10pt;/* Set the font size to 10pt */
+  padding: 10px;/* Add padding to all sides of the cell */
+}
+
+.row {
+  display: flex; /* Set the row to display as a flexible container */
+  flex-wrap: wrap; /* Allow the flex items inside the row to wrap on multiple lines if necessary */
+  padding: 0 4px; /* Add 4px padding to the left and right sides of the row */
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%; /* Set the flex value for the columns to occupy 50% of the row's width */
+  padding: 0 4px; /* Add 4px padding to the left and right sides of the column */
+}
+
+.column img {
+  margin-top: 8px; /* Add 8px margin to the top of the images inside the column */
+  vertical-align: middle; /* Align the images vertically in the middle of the line */
+}
+
+#img-gallery1, #img-gallery2, #img-gallery3, #img-gallery4, #img-gallery5, #img-gallery6, #img-gallery7, #img-gallery8, #img-gallery9 {
+  filter:blur(3px); /* Apply a 3px blur filter to the images with these IDs */
+}
+
+.left-col {
+  flex: 0 0 50%; /* Set the flex-grow, flex-shrink, and flex-basis values for the left column to occupy 50% of the row's width */
+  max-width: 45%; /* Set the maximum width of the left column to 50% of its container */
+}
+
+.right-col {
+  flex: 0 0 50%; /* Set the flex-grow, flex-shrink, and flex-basis values for the right column to occupy 50% of the row's width */
+  max-width: 45%; /* Set the maximum width of the right column to 50% of its container */
+}
+
+#aside {
+  display: flex; /* Set the main content area to display as a flexible container */
+  flex-wrap: wrap; /* Allow the flex items inside the main content area to wrap on multiple lines if necessary */
+  justify-content: center; /* Center the flex items horizontally inside the main content area */
+  align-items: flex-start; /* Align the flex items vertically at the top inside the main content area */
+}
+
+
+/* Login */
+#login {
+  float:right; /* Float the login element to the right side of its container */
+  margin-top: 10px; /* Add 10px margin to the top of the login element */
+}
+
+.members{
+  padding:10px; /* Add 10px padding around the members container */
+}
+
+.rounded-circle {
+  display: block; /* Display the image as a block element */
+  width: 120px; /* Set the width of the image to 120px */
+  height: 120px; /* Set the height of the image to 120px */
+  border-radius: 50%; /* Set the border-radius to 50% to make the image a circle */
+  object-fit: cover; /* Set the object-fit property to cover to prevent image distortion */
+  overflow: hidden; /* Hide any image overflow outside the rounded circle */
+}
+
+/* Add a hover effect to the image */
+.rounded-circle:hover {
+  transform: scale(1.1); /* Scale the image by 110% on hover */
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+#barb-caption,
+#cleric-caption,
+#wizard-caption {
+  display: none; /* Hide the elements with these IDs */
+}
+
+.carousel-caption {
+  position: absolute; /* Set the position property of the carousel caption to absolute */
+  top: 30%; /* Set the top position of the carousel caption to 30% of its container */
+  left: 50%; /* Set the left position of the carousel caption to 50% of its container */
+  transform: translate(-50%, -50%); /* Move the carousel caption up and left by half of its own width and height to center it */
+}
+
+#events,#discord{
+  float:left; /* Floats the add event form and discord text to the left */
+}
+  

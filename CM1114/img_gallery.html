@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+    <!--Head of the page-->
+
+    <head>
+        <title>Dark and Darker Society</title>
+        <link rel='stylesheet' href='Coursework/css/main.css'>
+    </head>
+
+    <!--
+    Image Gallery Threat Model
+    Threat Source: External/Internal
+    Threat Agent: Human/Non-Human
+    Threat Intention: Intentional/Unintentional
+    Threat Motivation: Sabotage/Espionage/Malware Injection
+    Threat Impact: Unauthorized Access to Images, Data Breach, Malware Infection
+    Threat Mitigation: Access Control, Image Encryption, Backup and Recovery, Security Monitoring, Anti-Malware Software
+    -->
+
+    <!--Body Start-->
+    <body>
+        <header>
+            <img src="Coursework/images/logo.jpg" id ="logo" alt = "logo">
+            <h1>Dark and Darker Society</h1>
+        </header>
+        <!-- Highlight/delight function-->
+        <script>
+            function highlight(id) {
+                document.getElementById(id).style="border: solid white 2px; filter:blur(0px);"
+            }
+            
+            function delight(id) {
+                document.getElementById(id).style="border: none; filter:blur(3px);"
+            }
+
+        </script>
+
+        <!--Navigation bar-->
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="event_calendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="meta.html">Meta</a></li>
+                <li><a href="ironmace.html">Ironmace</a></li>
+            </ul>
+        </nav>
+
+        <!--Main -->
+        <main>
+            <div>
+                <h3>Welcome to the Dark and Darker Image Gallery</h3>
+                <p>Some nostalgic images from previous playtests</p>
+            </div>
+            <!--Image Container-->
+            <div class="row">
+                <div class ="column">
+                    <img id ="img-gallery1" src="Coursework/images/homescreen.jpeg" onmouseover="highlight('img-gallery1')" onmouseout="delight('img-gallery1')" width="700px" height="350px" alt="Home screen"/>
+                    <img id ="img-gallery2" src="Coursework/images/bridge.jpeg"  onmouseover="highlight('img-gallery2')" onmouseout="delight('img-gallery2')"  width="700px" height="350px" alt="Bridge Room"/>
+                    <img id ="img-gallery3" src="Coursework/images/escape.jpeg"  onmouseover="highlight('img-gallery3')" onmouseout="delight('img-gallery3')"  width="700px" height="350px" alt="Escape portal"/>
+                    <img id ="img-gallery4" src="Coursework/images/downportal.jpeg"  onmouseover="highlight('img-gallery4')" onmouseout="delight('img-gallery4')"  width="700px" height="350px" alt="Down portal"/>
+                </div>
+                <div class ="column">
+                    <img id ="img-gallery5" src="Coursework/images/inventory.jpeg"  onmouseover="highlight('img-gallery5')" onmouseout="delight('img-gallery5')"  width="700px" height="350px" alt="Inventory Screen"/>
+                    <img id ="img-gallery6" src="Coursework/images/map.jpeg"  onmouseover="highlight('img-gallery6')" onmouseout="delight('img-gallery6')"  width="700px" height="350px" alt="Map screen"/>
+                    <img id ="img-gallery7" src="Coursework/images/merchants.jpeg"  onmouseover="highlight('img-gallery7')" onmouseout="delight('img-gallery7')"  width="700px" height="350px" alt="Merchant trading screen"/>
+                    <img id ="img-gallery8" src="Coursework/images/trollboss.jpeg"  onmouseover="highlight('img-gallery8')" onmouseout="delight('img-gallery8')"  width="700px" height="350px" alt="Troll boss"/>
+                    <img id ="img-gallery9" src="Coursework/images/homescreen2.jpeg"  onmouseover="highlight('img-gallery9')" onmouseout="delight('img-gallery9')"  width="700px" height="350px" alt="Fan art"/>
+                </div>
+            </div>
+            
+        </main>
+        <!--Footer-->
+        <footer><p>Copyright Jack Begg 2023</p></footer>
+    </body>
+</html>

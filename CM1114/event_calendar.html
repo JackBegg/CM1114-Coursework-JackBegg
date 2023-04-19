@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+    <!--Head of the page-->
+
+    <head>
+        <title>Dark and Darker Society</title>
+    </head>
+
+    <!--Function to suggest an event-->
+    <script>
+        function submit_event() {
+
+            var title = document.forms["events"]["event_title"].value;
+            var date = document.forms["events"]["event_date"].value;
+        
+            if (title == "") {
+                alert("An event must have a title!");
+            }
+            else {
+                if (date.length == 0) {
+                    alert("An event must have a date!");
+                }
+                else {
+                    alert("Event submitted! The society will contact you soon!");
+                }
+            }
+        }
+    </script>
+
+    <!--Body start-->
+    <body>
+        <header>
+            <h1>Dark and Darker Society</h1><img src="Coursework/images/logo.jpg" id ="logo" alt = "logo">
+            <link rel='stylesheet' href='Coursework/css/main.css'>
+        </header>
+        
+        <!--Navigation bar-->
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="event_calendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="meta.html">Meta</a></li>
+                <li><a href="ironmace.html">Ironmace</a></li>
+            </ul>
+        </nav>
+
+        <!--Main-->
+
+        <main>
+            <div>
+                <h3>Welcome to the Dark and Darker Event Calender</h3>
+                <p>Interested in finding out about the next playtest, community events and Possible release date?</p>
+            </div>
+
+            <!--Event table-->
+            <table>
+                <tr>
+                    <td></td><th>Febuary</th><th>March</th><th>April</th><th>May</th>
+                </tr>
+                <tr>
+                    <th>Week 1</th><td>Community riddle/ <br/> Troll boss hunt!</td><td></td><td></td><td>Definate Release!</td>
+                </tr>
+                <tr>
+                    <th>Week 2</th><td>Alpha Playtest #4</td><td></td><td>Alpha Playtest #5</td><td></td>
+                </tr>
+                <tr>
+                    <th>Week 3</th><td></td><td></td><td>Possible Release?!</td><td></td>
+                </tr>
+                <tr>
+                    <th>Week 4</th><td></td><td>Online Staff Q&A!</td><td></td><td></td>
+                </tr>
+            </table>
+
+            <!--Discord Link section-->
+            <div>
+                <p id="discord">
+                    We recommend looking out for the latest playtest news by joining the <a href="https://discord.gg/darkanddarker">Discord!</a>
+                </p>
+            </div>
+
+            <!--Suggest an event form-->
+            <div>
+                <form name="events" id="events">
+                    <label for="event_title">Event Title:</label>
+                    <input type="text" id="event_title" name="event_title" placeholder="Enter event title">
+                
+                    <label for="event_date">Event Date:</label>
+                    <input type="date" id="event_date" name="event_date">
+                
+                    <button type="submit" onclick="submit_event()">Submit Event</button>
+                </form>
+            </div>
+        </main>
+
+        <!--Footer-->
+        
+        <footer><p>Copyright Jack Begg 2023</p></footer>
+    </body> 
+</html>

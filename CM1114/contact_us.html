@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+    <!--Head of the page-->
+
+    <head>
+        <title>Dark and Darker Society</title>
+        <link rel='stylesheet' href='Coursework/css/main.css'>
+    </head>
+
+    <!--Body start-->
+
+    <body>
+        <header><img src="Coursework/images/logo.jpg" id ="logo" alt = "logo">
+            <h1>Dark and Darker Society</h1>
+        </header>
+
+        <!--Navigation bar-->
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="event_calendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="meta.html">Meta</a></li>
+                <li><a href="ironmace.html">Ironmace</a></li>
+            </ul>
+        </nav>
+        
+        <!--Main Start-->
+
+        <main>
+            <div>
+                <h3>Welcome to the Dark and Darker Society Contact Page!</h3>
+                <p>Got any questions about the game?</p>
+            </div>
+            <!--Contact us form-->
+            <div class="left-col">
+                <form>
+                    <fieldset>
+                        <legend>Contact Us using the below form</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" value = ""/> <br/>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" value = ""/> <br/>
+                        <label for = "memberYes">Member</label>
+                        <input type="radio" name="memberYes" value = ""/>
+                        <label for = "memberNo">Not a Member</label>
+                        <input type="radio" name="memberNo" value = ""/><br/>
+                        <label for="comments">Comments:</label>
+                        <input type="text" name="comments" value = ""/> <br/>
+                        <label for="myfile">Attach any files:</label>
+                        <input type="file" name="myfile" value = ""/> <br/>
+                        <button type="button" onclick='document.getElementById("form_outcome").innerHTML=
+                        "Form has been sent successfully!"'>Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!--Twitter plug-->
+            <div class="right-col">
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">Many adventurers thought the Early Access would come on April but 
+                    <a href="https://twitter.com/IronmaceGames?ref_src=twsrc%5Etfw">@IronmaceGames</a>
+                    need more development on the game so its gonna be a new playtest. <br><br>The next playtest will be scheduled for April 14-19th.
+                    <a href="https://twitter.com/hashtag/DarkAndDarker?src=hash&amp;ref_src=twsrc%5Etfw">#DarkAndDarker</a>
+                    </p>&mdash; Dark and Darker (@DarkandDarkerEN) <a href="https://twitter.com/DarkandDarkerEN/status/1629194146664656897?ref_src=twsrc%5Etfw">February 24, 2023</a>
+                </blockquote> 
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <!--Submit Outcome-->
+            <div>
+                <p id="form_outcome"></p>
+            </div>
+            
+        </main>
+
+        <!--Footer-->
+        
+        <footer><p>Copyright Jack Begg 2023</p></footer>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+    <!--Head of the page-->
+
+    <head>
+        <title>Dark and Darker Society</title>
+        <link rel='stylesheet' href='Coursework/css/main.css'>
+    </head>
+
+    <!--Showing and removing details of classes when hovering-->
+    <script>
+        function showdetails(id) {
+            document.getElementById(id).style="display:block;"
+        }
+
+        function removedetails(id){
+            document.getElementById(id).style="display:none;"
+        }
+    </script>
+
+    <!--Body start-->
+    <body>
+        <header>
+            <img src="Coursework/images/logo.jpg" id ="logo" alt = "logo">
+            <h1>Dark and Darker Society</h1>
+        </header>
+        <!--Navigation Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="event_calendar.html">Events</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="meta.html">Meta</a></li>
+                <li><a href="ironmace.html">Ironmace</a></li>
+            </ul>
+        </nav>
+
+        <!--Main Start-->
+        <main>
+            <div>
+                <h3>Welcome to the Dark and Darker Meta Page</h3>
+                <p>Here you can learn about the best team comp to play with examples</p>
+            </div>
+            <!--Left colomn containing images and hidden captions-->
+            <div class="left-col">
+                <p>The most common and effective team comp is nicknamed "buff ball" because of its execution method and includes the following classes:</p>
+                <p>(hover images to see descriptions)</p>
+                <div class="row">
+                    <div id="barb-container" class="members">
+                        <h5>Barbarian</h5>
+                        <img id="barb" src="Coursework/images/Barbarian.png" onmouseover="showdetails('barb-caption')" onmouseout="removedetails('barb-caption')" class="rounded-circle" preserveAspectRatio="xMidYMid slice">
+                    </div>
+                    <div id="cleric-container" class="members">
+                        <h5>Cleric</h5>
+                        <img id="cleric" src="Coursework/images/Cleric.png" onmouseover="showdetails('cleric-caption')" onmouseout="removedetails('cleric-caption')" class="rounded-circle" preserveAspectRatio="xMidYMid slice">
+                    </div>
+                    <div id="wizard-container" class="members">
+                        <h5>Wizard</h5>
+                        <img id="wizard" src="Coursework/images/Wizard.png" onmouseover="showdetails('wizard-caption')" onmouseout="removedetails('wizard-caption')" class="rounded-circle" preserveAspectRatio="xMidYMid slice">
+                    </div>
+                </div>
+                <div>
+                    <p id="barb-caption">The Barbarian's main job is to infiltrate the enemy backline once buffed and eliminate the weakest link in the enemies team comp</p>
+                    <p id="cleric-caption">The Cleric's main job is to make sure the Barbarian has protection spells active and is healed to full hp</p>
+                    <p id="wizard-caption" >The Wizard's main job is to haste and invis the Barbarian allowing him to quickly slip past the enemies undetected</p>
+                </div>
+            </div>
+            <!--Right column containing youtube video-->
+            <div class="right-col">
+                <p>Here is a video to showcase how effective the "buffball" strategy is when used by very experienced players:</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HY8ebTYKWug" 
+                title="Dark and Darker Society Video" frameborder="0" allow="accelerometer; autoplay; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+        <!--Footer-->
+        <footer><p>Copyright Jack Begg 2023</p></footer>
+    </body>
+</html>
